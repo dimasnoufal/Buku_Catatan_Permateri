@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Mengambil id komponen dari layout login
+//         Mengambil id komponen dari layout login
 //        etEmail = findViewById(R.id.et_email_login);
 //        etPassword = findViewById(R.id.et_password_login);
 //        btnLogin = findViewById(R.id.btn_login);
@@ -56,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                     login.putExtra("email", email);
                     login.putExtra("password", password);
                     startActivity(login);
+                    finishAffinity();
                 }
             }
         });
